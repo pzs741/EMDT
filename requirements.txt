@@ -1,0 +1,4 @@
+jieba==0.39
+requests==2.18.4
+TEDT==0.5
+beautifulsoup4==4.5.3
