@@ -16,7 +16,7 @@ __copyright__ = 'Copyright 2018, Ex_treme'
 import requests
 from bs4 import BeautifulSoup
 
-from .util import *
+from EMDT.util import *
 
 
 class TEBR(object):

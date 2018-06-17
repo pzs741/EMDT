@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 """
 EMDT（ Extraction and Mining Algorithm for Question Answering Pair Based on Web Document Density and Tags）要完成了：
 
@@ -14,9 +15,10 @@ __author__ = 'Ex_treme'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2018, Ex_treme'
 
-from .extraction import TEBR
-from .mining import MineByDensity, MineByTag
-from .util import *
+
+from EMDT.extraction import TEBR
+from EMDT.mining import MineByDensity, MineByTag
+from EMDT.util import *
 
 
 class EMDT(object):
@@ -149,3 +151,4 @@ class EMDT(object):
 
 if __name__ == "__main__":
     pass
+

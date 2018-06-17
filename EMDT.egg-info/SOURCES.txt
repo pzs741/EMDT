@@ -1,7 +1,7 @@
 README.md
 setup.py
-EMDT/EMDT.py
 EMDT/__init__.py
+EMDT/emdt.py
 EMDT/extraction.py
 EMDT/mining.py
 EMDT/util.py

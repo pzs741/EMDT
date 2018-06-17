@@ -8,7 +8,12 @@ __author__ = 'Ex_treme'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2018, Ex_treme'
 
-from EMDT.mining import MineByTag
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.getcwd()))
+
+from EMDT import MineByDensity
 
 if __name__ == "__main__":
     content = """                    
@@ -151,8 +156,8 @@ if __name__ == "__main__":
     	<p class="msonormal" id="ZH-CN_TOPIC_0025000762__p34550710">
     		Q：华为云迁移都支持什么场景？
     """
-    m = MineByTag(content)
-    # m = MineByDensity(content)
+    # m = MineByTag(content)
+    m = MineByDensity(content)
     m.qa_mine()
     m.get_qa()
     for i in m.qa:

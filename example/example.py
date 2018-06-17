@@ -8,6 +8,11 @@ __author__ = 'Ex_treme'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2018, Ex_treme'
 
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.getcwd()))
+
 from EMDT import EMDT
 
 if __name__ == "__main__":

@@ -8,7 +8,12 @@ __author__ = 'Ex_treme'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2018, Ex_treme'
 
-from EMDT.extraction import TEBR
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.getcwd()))
+
+from EMDT import TEBR
 
 if __name__ == "__main__":
     # with open('test.html', encoding='utf-8', mode='r') as f:

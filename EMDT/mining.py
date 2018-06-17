@@ -17,8 +17,8 @@ import jieba
 from TEDT.text_rank import TextRank
 from bs4 import BeautifulSoup
 
-from .extraction import TEBR
-from .util import *
+from EMDT.extraction import TEBR
+from EMDT.util import *
 
 
 class Mine(object):

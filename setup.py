@@ -1,4 +1,4 @@
-#!/bin/python2.7
+#!/bin/python3.6
 # -*- coding: utf-8 -*-
 """
 Ex_treme 2018 -- https://github.com/pzs741
@@ -7,7 +7,6 @@ Ex_treme 2018 -- https://github.com/pzs741
 import sys
 import os
 import codecs
-
 
 try:
     from setuptools import setup
@@ -35,7 +34,7 @@ with codecs.open('README.md', 'r', 'utf-8') as f:
 
 setup(
     name='EMDT',
-    version='0.1.0',
+    version='0.1.1',
     description='EMDT,Extraction and Mining Algorithm for Question Answering Pair Based on Web Document Density and Tags',
     long_description=readme,
     author='Z.S. Peng/Ex_treme',
