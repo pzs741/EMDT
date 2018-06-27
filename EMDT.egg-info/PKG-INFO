@@ -1,9 +1,9 @@
 Metadata-Version: 1.1
 Name: EMDT
-Version: 0.1.1
+Version: 0.1.2
 Summary: EMDT,Extraction and Mining Algorithm for Question Answering Pair Based on Web Document Density and Tags
 Home-page: https://github.com/pzs741/EMDT
-Author: Z.S. Peng/Ex_treme
+Author: Ex_treme
 Author-email: pzsyjsgldd@163.com
 License: MIT
 Description-Content-Type: UNKNOWN

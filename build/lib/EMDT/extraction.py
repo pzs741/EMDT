@@ -155,7 +155,7 @@ class TEBR(object):
         1.更新所有实例参数
         2.通过topic和content获取主题和正文源代码
          """
-        self.rawPage = self.getRawPage()
+        self.rawPage = re.sub(reTRIM.format("script"), "", re.sub(reTRIM.format("style"), "", self.getRawPage()))
         self.soup = BeautifulSoup(self.rawPage, 'lxml')
         self.content = self.getContext()
         self.topic = self.get_topic()

@@ -22,7 +22,7 @@ from EMDT.mining import (
 
 __all__ = [EMDT, TEBR, Mine, MineByTag, MineByDensity]
 
-version_info = (0, 1, 1)
+version_info = (0, 1, 2)
 
 __version__ = ".".join(map(str, version_info))
 
@@ -31,4 +31,3 @@ print('__author__:',__author__)
 print('__license__:',__license__)
 print('__copyright__:',__copyright__)
 print('__version__:',__version__)
-print('__all__:',__all__)

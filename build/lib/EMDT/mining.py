@@ -157,8 +157,12 @@ class Mine(object):
         """
         tmp = []
         for i in list:
-            if type(i) == str:
+            question = [a for a in cut(str(i)) if a in q_good_words]
+            if type(i) == str and not question:
                 tmp.append(i)
+            elif type(i) == str and  question:
+                break
+
         return '\n'.join(tmp)
 
     @staticmethod
@@ -232,7 +236,7 @@ class Mine(object):
         """ 问答对挖掘模型
         Input：问答对列表                            -- list类型
         问答列表整体相关度得分*问答特征平均分
-        Outpt:得分列表                              -- list类型
+        Outpt:得分                              -- float类型
         """
         if not qa_list:
             return 0
