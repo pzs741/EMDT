@@ -31,7 +31,7 @@ python setup.py install
 + CONTENT_RULE = ['.help-details.webhelp','.help-center-title']&nbsp;&nbsp;#正文辅助抽取规则
 + TOPIC_RULE = ['.crumbs','.parentlink']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#主题辅助抽取规则
 + QA_JACCARD_THRESHOLD = 0.25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#基于密度的挖掘算法问答过滤阈值
-+ self.REMOVE_HTML = False  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#去除答案HTML
++ REMOVE_HTML = False  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#去除答案HTML
 
 ## 输入示例
 1. 输入为url
