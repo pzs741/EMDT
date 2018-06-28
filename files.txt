@@ -8,4 +8,4 @@
 /usr/local/lib/python3.5/dist-packages/EMDT/__pycache__/__init__.cpython-35.pyc
 /usr/local/lib/python3.5/dist-packages/EMDT/__pycache__/mining.cpython-35.pyc
 /usr/local/lib/python3.5/dist-packages/EMDT/__pycache__/util.cpython-35.pyc
-/usr/local/lib/python3.5/dist-packages/EMDT-0.1.2.egg-info
+/usr/local/lib/python3.5/dist-packages/EMDT-0.2.0.egg-info

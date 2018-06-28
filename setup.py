@@ -13,7 +13,8 @@ __title__ = 'EMDT'
 __author__ = 'Ex_treme'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2018, Ex_treme'
-version_info = (0, 1, 2)
+
+version_info = (0, 2, 0)
 
 __version__ = ".".join(map(str, version_info))
 

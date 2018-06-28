@@ -44,6 +44,7 @@ class EMDT(object):
         self.content_rule = self._config.CONTENT_RULE
         self.topic_rule = self._config.TOPIC_RULE
         self.qa_jaccard_threshold = self._config.QA_JACCARD_THRESHOLD
+        self.remove_html = self._config.REMOVE_HTML
         self.url = url
         t = TEBR(self.url, self.blockSize, self.capacity, self.timeout, self.saveImage, self.content_rule,
                  self.topic_rule)
@@ -99,6 +100,9 @@ class EMDT(object):
                     self.answers.append(i[1])
         if self.mine_question.__len__() is not self.answers.__len__():
             raise Exception('发生错误，analyse执行失败！')
+
+        if self.remove_html and self.answers:
+            self.answers = [TEBR.processTags(i)[0].strip() for i in self.answers]
 
     def format(self):
         """ 格式化输出

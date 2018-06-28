@@ -117,7 +117,6 @@ def qa_jaccard(q, a):
     else:
         return 0
 
-
 # 拓展配置，自动将字典转换为参数配置
 def extend_config(config, config_items):
     """
@@ -151,7 +150,7 @@ class Configuration(object):
         self.CONTENT_RULE = ['.help-details.webhelp', '.help-center-title']  # 正文辅助抽取规则
         self.TOPIC_RULE = ['.crumbs', '.parentlink']  # 主题辅助抽取规则
         self.QA_JACCARD_THRESHOLD = 0.25  # 基于密度的挖掘算法问答过滤阈值
-
+        self.REMOVE_HTML = False#去除答案HTML
 
 if __name__ == '__main__':
     phrase = 'DNS'
